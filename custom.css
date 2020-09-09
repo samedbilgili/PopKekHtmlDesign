@@ -1,0 +1,779 @@
+@charset "utf-8";
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url("font/gothamcondensedbold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Neosan;
+    src: url("font/neosanstr.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeosanMedium;
+    src: url("font/neosansmediumtr.otf") format("opentype");
+}
+
+/* Mobile Layout */
+
+body {
+    background: url('images/anasayfamobil05.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'GraublauWeb';
+}
+
+header {
+    display: flex;
+    padding-top: 35px;
+    flex-wrap: wrap;
+}
+
+.logo-div {
+    text-align: center;
+}
+
+.logo-div img {
+    max-width: 250px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.kayitbutton-mobile {
+    display: block;
+    text-align: center;
+}
+
+.kayitbutton-mobile button {
+    border-radius: 12px;
+    color: #222;
+    background-color: #fbd503;
+    height: 50px;
+    padding: 5px 25px;
+    font-size: 26px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+.headtext {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.headtext img {
+    max-width: 280px;
+}
+
+.links {
+    text-align: right;
+    display: none;
+}
+
+.links a {
+    color: #ce0006;
+    font-size: 22px;
+    font-family: 'GraublauWeb';
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .boxs .item .hover {
+    display: none;
+}
+
+section .boxs .item div {
+    display: inline-block;
+}
+
+section .boxs .item div p {
+    color: white;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+}
+
+section .boxs .item:nth-child(1) {
+    padding-top: 20px;
+    padding-left: 0%;
+    text-align: center;
+}
+
+section .boxs .item:nth-child(1) img {
+    width: 190px;
+}
+
+section .boxs .item:nth-child(2) {
+    padding-top: 10px;
+    padding-left: 0%;
+    text-align: center;
+}
+
+section .boxs .item:nth-child(2) img {
+    width: 190px;
+}
+
+section .boxs .item:nth-child(3) {
+    padding-top: 10px;
+    padding-left: 0%;
+    text-align: center;
+}
+
+section .boxs .item:nth-child(3) img {
+    width: 190px;
+}
+
+section .description {
+    text-align: center;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+section .description img {
+    width: 100%;
+}
+
+section .description div {
+    background-color: #bb0005;
+    border-radius: 16px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, .26);
+    padding: 15px;
+}
+
+section .description div h1 {
+    font-size: 38px;
+    color: #fbd503;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .26);
+    letter-spacing: 2px;
+}
+
+section .description div p {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+section .description div p .vurgu {
+    color: #fbd503;
+}
+
+section .description div h2 {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .26);
+    letter-spacing: 2px;
+}
+
+.whatsapp-mobile {
+    display: block;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.whatsapp-mobile a {
+    border-radius: 12px;
+    color: white;
+    background-color: #ce0006;
+    height: 50px;
+    padding: 5px 25px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+.button-div {
+    text-align: center;
+    padding-right: 9%;
+    padding-top: 15px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-div img {
+    width: 220px;
+    position: absolute;
+}
+
+.button-div button {
+    position: relative;
+    top: 50px;
+    left: 45px;
+    height: 60px;
+    border-radius: 12px;
+    width: 35%;
+    font-size: 24px;
+    color: #fff;
+    background-color: #ce0006;
+    text-align: center;
+    border-color: #ce0006;
+    letter-spacing: 2px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer .social-links {
+    display: none;
+    flex-direction: column;
+    width: 80px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+footer .social-links a {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.2s;
+    text-align: center;
+}
+
+footer .social-links a:hover {
+    background-color: white;
+    color: #ce0006;
+    font-size: 1.7em;
+    ;
+}
+
+.mobile-footer {
+    display: flex;
+    margin-top: 10px;;
+}
+
+.mobile-footer .social-links {
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.mobile-footer .social-links a {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.mobile-footer .links{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-footer .links a{
+    font-size: 17px;
+}
+
+
+#modal-kosullar .con p {
+    font-family: Neosans;
+    line-height: 15px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    font-family: Neosan;
+}
+
+#modal-kosullar {
+    position: fixed;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
+    justify-items: center;
+    z-index: 999999;
+}
+#modal-kosullar.active {
+    display: flex;
+    
+    flex-wrap: wrap;
+    padding-top: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#modal-kosullar .kosullar {
+    background: linear-gradient(180deg, rgba(254, 197, 21, 1) 0%, rgba(255, 231, 25, 1) 50%);
+    width: 90%;
+    margin-left: 5%;
+    padding: 30px;
+    border: solid #ce0006 6px;
+    border-radius: 20px;
+}
+#modal-kosullar .kosullar h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Neosan';
+    font-weight: bold;
+}
+
+#modal-kayit {
+    position: fixed;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
+    justify-items: center;
+    z-index: 999999;
+    overflow: scroll;
+}
+
+#modal-kayit.active {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#modal-kayit .kayit {
+    background: linear-gradient(180deg, rgba(254, 197, 21, 1) 0%, rgba(255, 231, 25, 1) 50%);
+    width: 90%;
+    margin-left: 5%;
+    padding: 30px;
+    border: solid #ce0006 6px;
+    border-radius: 20px;
+}
+
+#modal-kayit .kayit h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Neosan';
+    font-weight: bold;
+}
+
+#modal-kayit .kayit p {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Neosan';
+}
+
+#modal-kayit .kayit form {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-kayit .kayit form div {
+    display: flex;
+    align-items: baseline;
+}
+
+#modal-kayit .kayit form button {
+    height: 40px;
+    border-radius: 12px;
+    width: 35%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ce0006;
+    text-align: center;
+    border-color: #ce0006;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#modal-kayit .kayit form input[type="text"] {
+    border-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #222;
+    font-weight: normal;
+    font-family: 'Neosan';
+}
+
+#modal-kayit .kayit form input[type="text"]:focus {
+    outline: none;
+}
+
+.closebutton {
+    position: relative;
+    left: 100%;
+    margin-left: 0px;
+    margin-top: -50px;
+    background-color: #ce0006;
+    z-index: 99999999;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 45px;
+    text-align: center;
+}
+
+button:focus {
+    outline: none;
+}
+
+.closebutton-kosullar {
+    position: relative;
+    left: 100%;
+    margin-left: 0px;
+    margin-top: -50px;
+    background-color: #ce0006;
+    z-index: 99999999;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 45px;
+    text-align: center;
+}
+button:focus {
+    outline: none;
+}
+
+.katılım-kosullari{
+    margin:0 15px;
+}
+
+@media only screen and (min-width: 481px) {}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    body {
+        background: url('images/popkekbg.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        font-family: 'GraublauWeb';
+    }
+    header {
+        display: flex;
+        padding-top: 35px;
+    }
+    .logo-div {
+        text-align: left;
+    }
+    .logo-div img {
+        max-width: 250px;
+        padding-left: 20px;
+    }
+    .kayitbutton-mobile {
+        display: none;
+    }
+    .headtext {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .headtext img {
+        max-width: 330px;
+    }
+    .links {
+        text-align: right;
+        display: block;
+    }
+    .links a {
+        color: #ce0006;
+        font-size: 22px;
+        font-family: 'GraublauWeb';
+        margin-right: 30px;
+        letter-spacing: 2px;
+    }
+    section {
+        display: flex;
+    }
+    section .boxs .item .hover {
+        display: none;
+    }
+    section .boxs .item div {
+        display: inline-block;
+    }
+    section .boxs .item div p {
+        display: none;
+    }
+    section .boxs .item:nth-child(1) {
+        padding-top: 20px;
+        padding-left: 5%;
+        text-align: left;
+    }
+    section .boxs .item:nth-child(1) img {
+        width: 170px;
+    }
+    section .boxs .item:nth-child(2) {
+        padding-top: 30px;
+        padding-left: 30%;
+        text-align: left;
+    }
+    section .boxs .item:nth-child(2) img {
+        width: 210px;
+    }
+    section .boxs .item:nth-child(3) {
+        padding-top: 50px;
+        padding-left: 15%;
+        text-align: left;
+    }
+    section .boxs .item:nth-child(3) img {
+        width: 170px;
+    }
+    section .description {
+        text-align: center;
+        width: 85%;
+        margin-left: 5%;
+    }
+    section .description img {
+        width: 200px;
+    }
+    section .description div {
+        background-color: #bb0005;
+        border-radius: 16px;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, .26);
+        padding: 15px;
+    }
+    section .description div h1 {
+        font-size: 35px;
+        color: #fbd503;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, .26);
+        letter-spacing: 2px;
+    }
+    section .description div p {
+        color: white;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    section .description div p .vurgu {
+        color: #fbd503;
+    }
+    section .description div h2 {
+        font-size: 26px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, .26);
+        letter-spacing: 2px;
+    }
+    .whatsapp-mobile {
+        display: none;
+    }
+    .button-div {
+        text-align: center;
+        padding-right: 9%;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-div img {
+        width: 220px;
+        position: absolute;
+    }
+    .button-div button {
+        position: relative;
+        top: 50px;
+        left: 45px;
+        height: 60px;
+        border-radius: 12px;
+        width: 35%;
+        font-size: 24px;
+        color: #fff;
+        background-color: #ce0006;
+        text-align: center;
+        border-color: #ce0006;
+        letter-spacing: 2px;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    footer .social-links {
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+    footer .social-links a {
+        color: white;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        padding: 12px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: 0.2s;
+        text-align: center;
+    }
+    footer .social-links a:hover {
+        background-color: white;
+        color: #ce0006;
+        font-size: 1.7em;
+    }
+    .mobile-footer {
+        display: none;
+    }
+
+    #modal-kosullar .con p {
+        font-family: Neosans;
+        line-height: 15px;
+        font-size: 13px;
+        margin-bottom: 12px;
+        font-family: Neosan;
+    }
+    
+    #modal-kosullar {
+        position: fixed;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: none;
+        align-items: center;
+        justify-items: center;
+        z-index: 999999;
+    }
+    #modal-kosullar.active {
+        display: flex;
+        
+        flex-wrap: wrap;
+        padding-top: 20px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #modal-kosullar .kosullar {
+        background: linear-gradient(180deg, rgba(254, 197, 21, 1) 0%, rgba(255, 231, 25, 1) 50%);
+        width: 45%;
+        margin-left: 27.5%;
+        padding: 30px;
+        border: solid #ce0006 6px;
+        border-radius: 20px;
+    }
+    #modal-kosullar .kosullar h4 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Neosan';
+        font-weight: bold;
+    }
+
+    #modal-kayit {
+        position: fixed;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: none;
+        align-items: center;
+        justify-items: center;
+        z-index: 999999;
+    }
+    #modal-kayit.active {
+        display: flex;
+    }
+    #modal-kayit .kayit {
+        background: linear-gradient(180deg, rgba(254, 197, 21, 1) 0%, rgba(255, 231, 25, 1) 50%);
+        width: 45%;
+        margin-left: 27.5%;
+        padding: 30px;
+        border: solid #ce0006 6px;
+        border-radius: 20px;
+    }
+    #modal-kayit .kayit h4 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Neosan';
+        font-weight: bold;
+    }
+    #modal-kayit .kayit p {
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Neosan';
+    }
+    #modal-kayit .kayit form {
+        display: flex;
+        flex-direction: column;
+    }
+    #modal-kayit .kayit form div {
+        display: flex;
+        align-items: baseline;
+    }
+    #modal-kayit .kayit form button {
+        height: 40px;
+        border-radius: 12px;
+        width: 35%;
+        font-size: 18px;
+        color: #fff;
+        background-color: #ce0006;
+        text-align: center;
+        border-color: #ce0006;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #modal-kayit .kayit form input[type="text"] {
+        border-color: white;
+        border-radius: 5px;
+        width: 60%;
+        margin-left: 20%;
+        height: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #222;
+        font-weight: normal;
+        font-family: 'Neosan';
+    }
+    #modal-kayit .kayit form input[type="text"]:focus {
+        outline: none;
+    }
+    .closebutton {
+        position: relative;
+        left: 100%;
+        margin-left: 0px;
+        margin-top: -50px;
+        background-color: #ce0006;
+        z-index: 99999999;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 45px;
+        text-align: center;
+    }
+    button:focus {
+        outline: none;
+    }
+
+    .closebutton-kosullar {
+        position: relative;
+        left: 100%;
+        margin-left: 0px;
+        margin-top: -50px;
+        background-color: #ce0006;
+        z-index: 99999999;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 45px;
+        text-align: center;
+    }
+    button:focus {
+        outline: none;
+    }
+
+    .katılım-kosullari{
+        margin:auto;
+    }
+}
